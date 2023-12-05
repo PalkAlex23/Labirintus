@@ -8,12 +8,12 @@ package halallabirintus;
  *
  * @author PalkovicsAlex(SZOFT_
  */
-public class ElsoOldal extends javax.swing.JFrame {
+public class AlagutNyugat extends javax.swing.JFrame {
 
     /**
      * Creates new form masodikOldal
      */
-    public ElsoOldal() {
+    public AlagutNyugat() {
         initComponents();
     }
 
@@ -28,73 +28,76 @@ public class ElsoOldal extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        btnLada = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        btnNyugat = new javax.swing.JButton();
         btnEszak = new javax.swing.JButton();
         lblHatter2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Első oldal");
+        setTitle("Újabb elagázás a lábnyomok miatt");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Miután öt percet haladtál lassan az alagútban, egy kőasztalhoz érsz,");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("A három pár nedves lábnyomot követve az alagútnyugati");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 510, -1));
 
         jLabel1.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("amely a bal oldali fal mellett áll.");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 40, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Palatino Linotype", 1, 16)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Hat doboz van rajta, egyikükre a te neved festették.");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("elágazásában hamarosan egy újabb el-ágazáshoz érsz.");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 520, -1));
 
         jLabel5.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Kinyitod a dobozt, vagy inkább tovább haladsz észak felé?");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("haladsz észak felé a harmadik lábnyom párat követve?");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 530, -1));
 
-        btnLada.setBackground(new java.awt.Color(166, 196, 109));
-        btnLada.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
-        btnLada.setForeground(new java.awt.Color(51, 102, 0));
-        btnLada.setText("Kinyitom a dobozt");
-        btnLada.setFocusPainted(false);
-        btnLada.addActionListener(new java.awt.event.ActionListener() {
+        jLabel7.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Továbbmész nyugat felé a lábnyomokat követve, vagy");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 530, -1));
+
+        btnNyugat.setBackground(new java.awt.Color(153, 153, 255));
+        btnNyugat.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
+        btnNyugat.setForeground(new java.awt.Color(51, 51, 255));
+        btnNyugat.setText("Haladok nyugat felé");
+        btnNyugat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLadaActionPerformed(evt);
+                btnNyugatActionPerformed(evt);
             }
         });
-        getContentPane().add(btnLada, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 190, 120));
+        getContentPane().add(btnNyugat, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 230, 120));
 
-        btnEszak.setBackground(new java.awt.Color(166, 196, 109));
+        btnEszak.setBackground(new java.awt.Color(153, 153, 255));
         btnEszak.setFont(new java.awt.Font("Palatino Linotype", 1, 18)); // NOI18N
-        btnEszak.setForeground(new java.awt.Color(51, 102, 0));
+        btnEszak.setForeground(new java.awt.Color(51, 51, 255));
         btnEszak.setText("Haladok észak felé");
         btnEszak.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEszakActionPerformed(evt);
             }
         });
-        getContentPane().add(btnEszak, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 200, 190, 120));
+        getContentPane().add(btnEszak, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, 230, 120));
 
-        lblHatter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Kepek/erdo.jpg"))); // NOI18N
-        getContentPane().add(lblHatter2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 560, 400));
+        lblHatter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Kepek/alagut.jpg"))); // NOI18N
+        getContentPane().add(lblHatter2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 0, 560, 350));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnLadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLadaActionPerformed
-        new LadaNyitas().setVisible(true);
+    private void btnNyugatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNyugatActionPerformed
+        new Labnyomkovetes().setVisible(true);
         dispose();
-    }//GEN-LAST:event_btnLadaActionPerformed
+    }//GEN-LAST:event_btnNyugatActionPerformed
 
     private void btnEszakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEszakActionPerformed
-        new Alagut().setVisible(true);
+        new AlagutEszak().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnEszakActionPerformed
 
@@ -115,32 +118,38 @@ public class ElsoOldal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ElsoOldal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AlagutNyugat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ElsoOldal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AlagutNyugat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ElsoOldal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AlagutNyugat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ElsoOldal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AlagutNyugat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ElsoOldal().setVisible(true);
+                new AlagutNyugat().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEszak;
-    private javax.swing.JButton btnLada;
+    private javax.swing.JButton btnNyugat;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel lblHatter2;
     // End of variables declaration//GEN-END:variables
 }

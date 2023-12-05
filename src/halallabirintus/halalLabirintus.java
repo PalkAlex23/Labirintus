@@ -27,8 +27,8 @@ public class HalalLabirintus extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         btnJatek = new javax.swing.JButton();
-        btnCredit = new javax.swing.JButton();
         btnKilep = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
@@ -38,11 +38,18 @@ public class HalalLabirintus extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 28)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Halál Labirintus");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 400, -1));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setText("Készítette: Baksa Bence, Szabó-Mester Alex");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 540, 30));
+
+        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 28)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Halál Labirintus");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 400, -1));
 
         btnJatek.setBackground(new java.awt.Color(255, 190, 124));
         btnJatek.setForeground(new java.awt.Color(51, 51, 51));
@@ -55,20 +62,7 @@ public class HalalLabirintus extends javax.swing.JFrame {
                 btnJatekActionPerformed(evt);
             }
         });
-        getContentPane().add(btnJatek, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 160, 30));
-
-        btnCredit.setBackground(new java.awt.Color(255, 190, 124));
-        btnCredit.setForeground(new java.awt.Color(51, 51, 51));
-        btnCredit.setText("Credits");
-        btnCredit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnCredit.setBorderPainted(false);
-        btnCredit.setFocusPainted(false);
-        btnCredit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreditActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnCredit, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 160, 30));
+        getContentPane().add(btnJatek, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 160, 30));
 
         btnKilep.setBackground(new java.awt.Color(255, 190, 124));
         btnKilep.setForeground(new java.awt.Color(51, 51, 51));
@@ -81,7 +75,7 @@ public class HalalLabirintus extends javax.swing.JFrame {
                 btnKilepActionPerformed(evt);
             }
         });
-        getContentPane().add(btnKilep, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 160, 30));
+        getContentPane().add(btnKilep, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 160, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Kepek/labirintusHatter (1).jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 260));
@@ -98,10 +92,6 @@ public class HalalLabirintus extends javax.swing.JFrame {
        new Bevezetes().setVisible(true);
        dispose();
     }//GEN-LAST:event_btnJatekActionPerformed
-
-    private void btnCreditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreditActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreditActionPerformed
 
     /**
      * @param args the command line arguments
@@ -140,10 +130,10 @@ public class HalalLabirintus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCredit;
     private javax.swing.JButton btnJatek;
     private javax.swing.JButton btnKilep;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
